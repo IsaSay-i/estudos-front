@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prática 9 - Curso em vídeo</title>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+    <label for="vel">Velocidade do carro:</label>
+    <input type="number" name="vel" id="vel"> km/h 
+    <button>Verificar</button>
+    <div id="resp"></div>
+
+    <script>
+        const inputVel = document.getElementById("vel");
+        const resp = document.getElementById("resp");
+
+        document.querySelector("button").addEventListener("click", ()  => {
+            vel = Number.parseInt(inputVel.value);
+            resp.innerHTML = `<p>Sua velocidade é de ${vel}.</p>`;
+            if (vel > 60) {
+                resp.innerHTML += `<p>Você está MULTADO.</p>`;
+            } else {
+                resp.innerHTML += `<p>Dirija com segurança ;)</p>`;
+            }
+        });
+    </script>
+</body>
+</html>

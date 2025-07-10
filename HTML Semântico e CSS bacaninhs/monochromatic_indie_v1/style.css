@@ -1,0 +1,33 @@
+body {
+  background-color: #010203;
+}
+
+h1 { 
+  color: white;
+}
+
+h3 {
+  color: white;
+}
+
+p {
+  color: white;
+}
+
+footer {
+  background-color: black;
+}
+
+nav {
+  display: flexbox;
+  width: 100%;
+  background-color: rgb(27, 27, 27);
+}
+
+header a {
+  font-size: 1.7em;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}

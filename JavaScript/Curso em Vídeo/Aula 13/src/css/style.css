@@ -1,0 +1,41 @@
+body {
+  font: normal 1.2em Arial;
+  background-color: rgb(194, 27, 21);
+}
+
+header {
+  color: #fff;
+  text-align: center;
+}
+
+main {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px 15px 45px;
+  width: 500px;
+  margin: 20px auto;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3137254902);
+}
+
+main > section {
+  text-align: center;
+}
+
+figure {
+  margin: auto;
+}
+
+img {
+  margin: auto;
+  width: 270px;
+  height: 270px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+footer {
+  color: #fff;
+  font-style: italic;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */

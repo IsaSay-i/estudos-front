@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prática 7 - Curso em vídeo</title>
+
+    <style>
+        body {
+            font: normal 18pt Arial;
+        }
+        input {
+            font: normal 18pt Arial;
+        }
+        #res {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Somando Valores</h1>
+    <input type="number" name="texto1" id="texto1"> +
+    <input type="number" name="texto2" id="texto2">
+    <input type="button" value="somar">
+    <div id="res">Resultado...</div>
+
+    <script>
+        var botao = document.querySelector('input[type="button"]');
+        botao.addEventListener("click", somar);
+
+        function somar() {
+            var texto1 = document.getElementById("texto1");
+            var texto2 = document.querySelector("input#texto2");
+            var res = document.getElementById("res");
+            var n1 = Number.parseFloat(texto1.value);
+            var n2 = Number.parseFloat(texto2.value);
+
+            var soma = n1 + n2;
+            res.innerHTML = `Resultado: <strong>${soma}</strong>`;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prática 6 - Curso em vídeo</title>
+
+    <style>
+        #area {
+            width: 200px;
+            height: 200px;
+            border-radius: 25px;
+            background-color: #28c91a;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-family: Arial;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <div id="area">
+        Interage ai pow :)
+    </div>
+
+    <script>
+        var a = window.document.querySelector("div#area");
+        a.addEventListener("mouseenter", entrar);
+        a.addEventListener("mouseout", sair);
+        a.addEventListener("mouseup", mouseup);
+        a.addEventListener("mousedown", clicar);
+        a.addEventListener("mousemove", movendo);
+
+        function clicar(){
+            a.innerText = "Clicou !";
+            a.style.backgroundColor = "red";
+        };
+
+        function entrar(){
+            a.innerText = "Hover complicado da peste xD(entrou)";
+            a.style.backgroundColor = "green";
+        };
+
+        function mouseup(){
+            a.innerText = "Parou de pressionar, ainda está dentro da div";
+            a.style.backgroundColor = "turquoise";
+        };
+
+        function movendo(){
+            a.innerText = "Movimentação";
+            a.style.backgroundColor = "yellow";
+        };
+
+        function sair(){
+            a.innerText = "Hover fujão(saiu)";
+            a.style.backgroundColor = "#1bc44e";
+        };
+    </script>
+</body>
+</html>

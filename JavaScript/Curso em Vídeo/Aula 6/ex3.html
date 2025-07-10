@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prática 3 - Curso em vídeo</title>
+    <style>
+        body{
+            background-color: #fcfaf6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow-y: hidden; /*Comentario css*/
+        }
+        h1{
+            color: green;
+        }
+        main{
+            background-color: #fff;
+            width: 70%;
+            border-radius: 25px;
+            box-shadow: 0 0 10px #0000001f;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Um título 3</h1> <!-- Comentario html-->
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur autem porro quos cumque expedita maiores itaque nulla dolorum natus culpa quo, quia nesciunt tempora id voluptatem necessitatibus quibusdam eveniet dolorem.</p>
+    </main>
+
+    <script>
+        var n1 = Number.parseFloat(window.prompt("Insira o 1º número: ")); //comentario JS
+        var n2 = Number.parseFloat(window.prompt("Insira o 2º número: ")); //comentario JS
+        var nome = window.prompt("Insira seu nome: ").toUpperCase();
+        var soma = n1 + n2;
+
+        // window.alert(n1 + " + " + n2 + " = " + soma);
+        window.alert(`${nome},\n${n1} + ${n2} = ${soma}`)
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prática 5 - Curso em vídeo</title>
+
+    <style>
+        html, body{
+            min-height: 100vh;
+        }
+        body{
+            background: linear-gradient(#85e2e9, #85b4e9, #4968ac);
+            font-family: Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando Estudos com o DOM :D</h1>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript :D</p>
+    <p>Resultado: </p>
+    <div id="msg">Clica aquiiii!!</div>
+
+
+    <script>
+        /*
+        var p1 = window.document.getElementsByTagName('p')[0];
+        var p2 = window.document.getElementsByTagName('p')[1];
+        */
+
+        // p2.style.color = "#c46ece";
+        /*
+        var msg = window.document.getElementById('msg');
+        // ou:
+        msg.innerText = "Perdeu";
+        window.document.getElementById('msg').innerText = "Jeito completo e longo de trocar o innerText"
+        */
+
+        var p2 = window.document.querySelector('div#msg');
+        p2.innerText = "Usando Query Selector yey";
+        
+    </script>
+</body>
+</html>
