@@ -1,0 +1,139 @@
+/* Hero-Section */
+.hero {
+  display: flex;
+  background-image: url("hero-image.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  max-height: 800px;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.65);
+  background-blend-mode: darken;
+  overflow: hidden;
+  background-attachment: fixed;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  background-attachment: fixed;
+  inset: 0;
+  background-image: url("hero-image.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: blur(8px); /* forte nas bordas */
+  mask-image: radial-gradient(
+    circle at center,
+    rgba(0, 0, 0, 0) 30%,
+    rgba(0, 0, 0, 1) 90%
+  );
+  mask-composite: exclude; /* Firefox */
+  -webkit-mask-image: radial-gradient(
+    circle at center,
+    rgba(0, 0, 0, 0.3) 50%,
+    rgba(0, 0, 0, 0.5) 95%
+  );
+  -webkit-mask-composite: destination-out; /* Chrome */
+  z-index: 1;
+}
+
+.hero figure {
+  display: flex;
+  align-items: center;
+  margin: auto auto auto 9vw;
+  width: auto;
+}
+
+.hero figcaption {
+  margin-left: 230px;
+  color: #e6e6e6;
+  text-shadow: -3px 4px 4px #00000079;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 4.3em;
+  max-width: 400px;
+  color: #fff;
+}
+
+.hero span { display: block; }
+
+.hero p { font-size: 1.5em; }
+
+.hero img {
+  filter: drop-shadow(-2px 3px 4px rgba(0, 0, 0, 0.3));
+  opacity: 0.9;
+  position: absolute;
+  height: 21em;
+}
+
+@media screen and (max-width: 960px) {
+  .hero figcaption {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .hero h1 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 70px 0 0;
+    padding: 0;
+  }
+
+  .hero figure {
+    padding: 0;
+    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero img {
+    position: absolute;
+    margin: auto;
+  }
+
+  .hero figcaption { margin: auto; }
+}
+
+@media screen and (max-width: 580px) {
+  .hero { text-align: center; }
+
+  .hero figcaption {
+    display: flex;
+    align-items: center;
+  }
+
+  .hero h1 {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .hero h1 { font-size: 3.6em; }
+}
+
+@media screen and (max-width: 425px) {
+  .hero h1 { font-size: 3em; }
+  .hero img { height: 16em; }
+  .hero {
+    margin-top: 45px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .hero h1 { font-size: 2.5em; }
+}
