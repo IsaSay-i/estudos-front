@@ -34,8 +34,12 @@
     list-style-position: inside;
 }
 
-.Article h2{ font-size: 2em;}
-.Article p, .Article li{ font-size: 1.25em;}
+.Article h2{ font-size: 1.7em;}
+.Article p, .Article li{ font-size: 1.1em;}
+
+.Article a{
+  word-break: break-word;
+}
 
 .Article span { color: var(--main);}
 

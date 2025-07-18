@@ -52,14 +52,14 @@
 }
 
 .hero h1 {
-  font-size: 4.3em;
+  font-size: 3.9em;
   max-width: 400px;
   color: #fff;
 }
 
 .hero span { display: block; }
 
-.hero p { font-size: 1.5em; }
+.hero p { font-size: 1.2em; }
 
 .hero img {
   filter: drop-shadow(-2px 3px 4px rgba(0, 0, 0, 0.3));
@@ -87,7 +87,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 70px 0 0;
     padding: 0;
   }
 
@@ -129,9 +128,6 @@
 @media screen and (max-width: 425px) {
   .hero h1 { font-size: 3em; }
   .hero img { height: 16em; }
-  .hero {
-    margin-top: 45px;
-  }
 }
 
 @media screen and (max-width: 360px) {
