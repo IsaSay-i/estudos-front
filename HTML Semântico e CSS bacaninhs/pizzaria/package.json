@@ -1,0 +1,28 @@
+{
+  "name": "pizzaria-unite",
+  "version": "1.0.0",
+  "description": "Projeto de website para pizzaria unite, utilizando HTML, JS e CSS(Tailwind). Nesse site é possível ver o cardápio, bebidas e informações de contato e localização da empresa. Contato contempla números de telefone, celular, se tiver, endereço do ifood, instagram e facebook. Também fornece horário de funcionamento.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IsaSay-i/pizzaria-unite.git"
+  },
+  "author": "Isabelle Sayuri Isa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IsaSay-i/pizzaria-unite/issues"
+  },
+  "homepage": "https://github.com/IsaSay-i/pizzaria-unite#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.11"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.11"
+  }
+}
